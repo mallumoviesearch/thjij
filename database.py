@@ -4,7 +4,7 @@ from motor import motor_asyncio as ma
 
 class Database:
     def __init__(self):
-        self.client = ma.AsyncIOMotorClient(environ.get('DATABASE_URL', "mongodb+srv://ko:ko@cluster0.xmweyfm.mongodb.net/?retryWrites=true&w=majority"))
+        self.client = ma.AsyncIOMotorClient(environ.get('DATABASE_URL", "mongodb+srv://ko:ko@cluster0.xmweyfm.mongodb.net/?retryWrites=true&w=majority"))
         self.db = self.client['AutoRequestBot']
         self.users = self.db.users
 
