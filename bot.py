@@ -9,9 +9,9 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 
 app = Client(
     name='requestBot',
-    bot_token=evn.get("BOT_TOKEN"),
-    api_id=evn.get("API_ID"),
-    api_hash=evn.get("API_HASH")
+    bot_token=evn.get("BOT_TOKEN", "2125506316:AAFGPXx0GNpeefPFkX-TcsuG3ZmUBWfXWGw"),
+    api_id=evn.get("API_ID", "14623143"),
+    api_hash=evn.get("API_HASH", "51ee2679d47d66aed5795876afc67622")
 )
 app.db = Database()
 
